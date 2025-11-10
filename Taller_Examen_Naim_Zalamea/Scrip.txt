@@ -1,0 +1,34 @@
+CREATE DATABASE biblioteca;
+USE biblioteca;
+
+-- Crear la tabla principal
+CREATE TABLE libros (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(100) NOT NULL,
+  autor VARCHAR(100) NOT NULL,
+  anio INT NOT NULL,
+  categoria VARCHAR(50)
+);
+
+-- Insertar varios registros
+INSERT INTO libros (titulo, autor, anio, categoria) VALUES
+('Cien años de soledad', 'Gabriel García Márquez', 1967, 'Novela'),
+('El principito', 'Antoine de Saint-Exupéry', 1943, 'Infantil'),
+('Don Quijote de la Mancha', 'Miguel de Cervantes', 1605, 'Clásico'),
+('La sombra del viento', 'Carlos Ruiz Zafón', 2001, 'Misterio'),
+('1984', 'George Orwell', 1949, 'Ciencia Ficción'),
+('El alquimista', 'Paulo Coelho', 1988, 'Ficción'),
+('Rayuela', 'Julio Cortázar', 1963, 'Novela'),
+('Los miserables', 'Victor Hugo', 1862, 'Clásico'),
+('Fahrenheit 451', 'Ray Bradbury', 1953, 'Ciencia Ficción'),
+('Crónica de una muerte anunciada', 'Gabriel García Márquez', 1981, 'Novela'),
+('Orgullo y prejuicio', 'Jane Austen', 1813, 'Romance'),
+('La casa de los espíritus', 'Isabel Allende', 1982, 'Realismo mágico'),
+('El código Da Vinci', 'Dan Brown', 2003, 'Thriller'),
+('Matar a un ruiseñor', 'Harper Lee', 1960, 'Drama'),
+('Harry Potter y la piedra filosofal', 'J.K. Rowling', 1997, 'Fantasía'),
+('Los juegos del hambre', 'Suzanne Collins', 2008, 'Distopía'),
+('It', 'Stephen King', 1986, 'Terror'),
+('El señor de los anillos', 'J.R.R. Tolkien', 1954, 'Fantasía'),
+('Drácula', 'Bram Stoker', 1897, 'Terror'),
+('El viejo y el mar', 'Ernest Hemingway', 1952, 'Clásico');
